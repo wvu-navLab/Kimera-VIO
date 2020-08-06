@@ -11,6 +11,6 @@ camera_id: left_cam
 camera_model: pinhole
 distortion_coefficients: [0.0, 0.0, 0.0, 0.0]
 distortion_model: radtan
-intrinsics: [381.36246688113556, 381.36246688113556, 320.5, 240.5]
-rate_hz: 0.0
+intrinsics: [238.3515418007097, 200.5,  238.3515418007097,  200.5]
+rate_hz: 20.0
 resolution: [400, 400]
