@@ -4,22 +4,22 @@
 backend_modality: 0
 
 # IMU PARAMETERS #############################################################
-gyroNoiseDensity: 0.005
-accNoiseDensity: 0.005
-gyroBiasSigma: 1.0e-6
-accBiasSigma: 1.0e-6
+gyroNoiseDensity: 0.00016968
+accNoiseDensity: 0.002
+gyroBiasSigma: 1.9393e-05
+accBiasSigma: 0.003
 imuIntegrationSigma: 1.0e-8
-n_gravity: [0.0, 0.0, -1.62]
-nominalImuRate: 0.01
+n_gravity: [0.0, 0.0, -9.81]
+nominalImuRate: 0.02
 #INITIALIZATION PARAMETERS
 autoInitialize: 0
 roundOnAutoInitialize: 0
 initialPositionSigma: 1e-05
-initialRollPitchSigma: 0.000174533 # 10.0/180.0*M_PI
-initialYawSigma: 0.000174533 # 0.1/180.0*M_PI
-initialVelocitySigma: 0.0001
-initialAccBiasSigma: 0.05
-initialGyroBiasSigma: 0.05
+initialRollPitchSigma: 0.174533 # 10.0/180.0*M_PI
+initialYawSigma: 0.00174533 # 0.1/180.0*M_PI
+initialVelocitySigma: 0.001
+initialAccBiasSigma: 0.1
+initialGyroBiasSigma: 0.01
 
 # VISION PARAMETERS ###########################################################
 ## Smart Factors ##
@@ -38,7 +38,7 @@ rankTolerance: 1
 #   * if the landmark is triangulated at distance larger than this,
 #   * result is flagged as degenerate.
 #   */
-landmarkDistanceThreshold: 5
+landmarkDistanceThreshold: 10
 
 # DynamicOutlierRejection:
 #  /**
