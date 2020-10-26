@@ -28,9 +28,9 @@ ransac_inlier_threshold_stereo: 0.3
 use_mono_rot: 0
 
 lowe_ratio: 0.2  # TODO(marcus): get rid, not used
-matcher_type: 1
+matcher_type: 3
 
-nfeatures: 100
+nfeatures: 1000
 scale_factor: 1.2
 nlevels: 8
 edge_threshold: 31
@@ -40,8 +40,8 @@ score_type_id: 0
 patch_sze: 31
 fast_threshold: 20
 
-pgo_rot_threshold: 0.05
-pgo_trans_threshold: 1.0
+pgo_rot_threshold: 0.005
+pgo_trans_threshold: 0.05
 
 # geom_check_id options:
 #   0: NISTER
